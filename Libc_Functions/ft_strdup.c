@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jlimcuan <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/09 16:17:45 by jlimcuan          #+#    #+#             */
+/*   Updated: 2022/03/09 16:24:11 by jlimcuan         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 char	*ft_strdup(const char *s1)
 {
-	char *s2;
+	char	*s2;
 
-	if(!(s2 = (char *)malloc(ft_strlen(s1) + 1)))
+	if (!(s2 = (char *)malloc (ft_strlen(s1) + 1)))
 		return (0);
-	ft_memcpy(s2, s1, ft_strlen(s1) + 1);
+	ft_memcpy (s2, s1, ft_strlen(s1) + 1);
 	return (s2);
 }
